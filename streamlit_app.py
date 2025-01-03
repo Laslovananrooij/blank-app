@@ -5,8 +5,8 @@ from utils import flatten_images
 
 # Check if there are changes in the editor
 def update(data):
-    background_file = "/workspaces/blank-app/Images/background/"+ data['background'].values[0] +".png"
-    planet_file = "/workspaces/blank-app/Images/Planets/"+ data['planet'].values[0] +".png"
+    background_file = "Images/background/"+ data['background'].values[0] +".png"
+    planet_file = "Images/Planets/"+ data['planet'].values[0] +".png"
 
     flatten_images("Out.png",[background_file, planet_file])
 
